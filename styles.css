@@ -1,0 +1,173 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+body{
+    width: 100%;
+    height: 100%;
+
+}
+
+.contenedor{
+
+    width: 100%;
+    margin:auto;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+header{
+
+    background: #008080;
+    width: 100%;
+    padding:20px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+}
+
+header .logo-img img{
+    width:180px;
+    vertical-align: top;
+}
+
+header .menu{
+    width: 50%;
+    color: #FFFFFF;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+
+}
+
+
+.right{
+    display:flex;
+    justify-content:center;
+
+}
+
+.menu-item{
+    font-size: 1.1em;
+
+    font-weight: 700;
+
+    text-decoration: none;
+    color:#FFFFFF;
+    padding:10px;
+    flex-grow:1;
+}
+
+.menu-item:hover{
+    opacity: 70%;
+}
+
+main{
+
+    padding:20px;
+    flex:2 2 70%;
+}
+
+aside{
+    padding:20px;
+    border:1px solid #008080;
+    flex:1 1 30%;
+    overflow-y: auto;
+
+}
+article{
+    overflow-y: auto;
+}
+
+    
+
+footer{
+
+    width: 100%;
+    height: 30px;
+    background: #333;
+    padding:5px;
+    position: fixed;
+    color:#fff;
+    bottom:0;
+    left:0;
+    
+}
+
+
+h1{
+    font-style: italic  ;
+    font-family: cursive;
+    color:RGB(0, 0, 0);
+}
+footer a{
+    color:#fff;
+    text-decoration: none;
+}
+
+@media screen and (max-width:800px){
+    .contenedor{
+	flex-direction: column;
+    }
+
+    header{
+	flex-direction: column;
+	padding:0;
+    }
+
+    header .logo-img{
+	margin:10px 0;
+	width: 100%;
+	border-bottom: 1px solid #333;
+	display:flex;
+	justify-content: center;
+    }
+
+
+    header .menu{
+	width:100%;
+    }
+
+    header .menu .menu-item{
+	font-size: 0.8em;
+
+
+    }
+
+    footer{
+	text-align: center;
+    }
+
+    .menu{
+	order:2;
+    }
+
+    .logo-img{
+	order:1;
+    }
+    .right{
+	width:100%;
+	justify-content:flex-end;
+	padding:6px;
+    }
+
+
+}
+
+@media screen and (max-width:600px){
+    header .menu .menu-item{
+	font-size: 0.6em;
+
+
+    }
+}
+
+/* JS */
+
+.img {
+    max-width: 100%;
+}

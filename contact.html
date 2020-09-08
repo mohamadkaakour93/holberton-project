@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact</title> 
+
+    <link rel="stylesheet" type="text/css" href="styles.css" media="screen" />
+    <link rel="stylesheet" type="text/css" href="styles-contact.css" media="screen" />
+    <script src="behavior.js"></script>
+  </head>
+  <body>
+    <div id="fb-root"></div>
+    <script async defer crossorigin="anonymous"
+	    src="https://connect.facebook.net/es_ES/sdk.js#xfbml=1&version=v7.0"></script>
+    <div class="contenedor">
+      <header>
+	<div class="logo-img">
+	  <a href="http://54.196.190.160/"><img src="https://logopond.com/logos/09bb8fe0be580fd764d9c5d461626bf7.png" alt="logo" width="150">
+	  </a>
+	</div>
+	<nav class="menu">
+	  <a href="index.html" class="menu-item">Home</a>
+	  <a href="http://54.196.190.160/services.html" class="menu-item">Services</a>
+	  <a href="http://54.196.190.160/gallery.html" class="menu-item">Gallery</a>
+	  <a href="http://54.196.190.160/contact.html" class="menu-item">Contact</a>
+	  <a href="http://54.196.190.160/tweets.html" class="menu-item">Tweets</a>
+	</nav>
+	<div class="right">
+	    <div class="fb-share-button"  data-href="https://www.facebook.com/mhamad.kaakour" data-layout="button" data-size="small"><a target="_blank" href="https://www.facebook\
+																			     .com/sharer/sharer.php?u=https%3A%2F%2Fwww.facebook.com%2Fmhamad.kaakour&amp;src=sdkpreparse"
+																       class="fb-xfbml-parse-ignore">compartir<\
+																						/a></div>
+	    <a href="https://twitter.com/share?ref_src=twsrc%5Etfw"  class="twitter-share-button" data-show-count="false">Tweet</a>
+	    <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+	</div>
+      </header>
+        </head> 
+<body>
+  <main>
+    <article>
+
+    <h2> Contact Section</h2>
+
+    <div class="container">
+      <div style="text-align:center">
+	<h2>Contact Us</h2>
+	<p> leave us a message, let us hear from you:</p>
+      </div>
+      <img src="https://logopond.com/logos/09bb8fe0be580fd764d9c5d461626bf7.png">
+      <div id="after_submit"></div>
+      <form id="contact_form" action="#" method="POST" enctype="multipart/form-data">
+	<div class="row">
+	  <label class="required" for="name">Your name:</label><br />
+	  <input id="name" class="input" name="name" type="text" value="" size="30" /><br />
+	  <span id="name_validation" class="error_message"></span>
+	</div>
+	<div class="row">
+	  <label class="required" for="email">Your email:</label><br />
+	  <input id="email" class="input" name="email" type="text" value="" size="30" /><br />
+	  <span id="email_validation" class="error_message"></span>
+	</div>
+	<div class="row">
+	  <label class="required" for="message">Your message:</label><br />
+	  <textarea id="message" class="input" name="message" rows="7" cols="30"></textarea><br />
+	  <span id="message_validation" class="error_message"></span>
+	</div>
+
+	<input id="submit_button" type="submit" value="Send" />
+      </form>
+      <aside>
+	<div id="disqus_thread"></div>
+	<script>
+
+
+	  var disqus_config = function () {
+	  this.page.url = "http://54.196.190.160/services.html";  // Replace PAGE_URL with your page's canonical URL variable
+	  this.page.identifier = "SERVICES" // Replace PAGE_IDENTIFIER with your page's unique identifier variable
+	  };
+
+	  (function() { // DON'T EDIT BELOW THIS LINE
+	  var d = document, s = d.createElement('script');
+	  s.src = 'https://54-196-190-160.disqus.com/embed.js';
+	  s.setAttribute('data-timestamp', +new Date());
+	  (d.head || d.body).appendChild(s);
+	  })();
+	</script>
+	<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+
+      </aside>
+      
+      
+
+          </main>  
+
+
+    <footer>      <p>Made by <a href="https://twitter.com/mhamadk93" target="_blank">Mohamad El kaakour</a> for <a href="https://www.holbertonschool.com" target="_blank">Holberton\
+	  School</a>.</p>
+    </footer>
+    </div>
+    <script id="dsq-count-scr" src="//54-196-190-160.disqus.com/count.js" async></script>
+</body>
+</html>
